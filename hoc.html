@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href=""></a>
+    <!-- 
+    HTML :
+    các thẻ thông dụng trong HTML  
+    ---------------------------
+1. THẺ <H>_ heading : tiêu đề 
+
+    Có từ H1 đến h6, tăng giảm kích cỡ cỡ chữ 
+
+2. THẺ <p>_pragraph ( đoạn văn):
+    Dùng để viết ra 1 đoạn văn trong HTML
+
+3. img_ image(hình ảnh):
+Attribute ( át-tri-biu): 
+LÀ THUỘC TÍNH CỦA CÁC THẺ TRONG HTML. THUỘC TÍNH ĐƯỢC ĐỊNH DẠNG TRONG THẺ MỞ 
+    + thuộc tính "src":  là để coppy nguồn ảnh vào đây
+    + thuộc tính "alt": để ghi NỘI DUNG hình ảnh, CHỈ KHI khi ẢNH LỖI thì nội dung này sẽ hiện ra 
+
+4. <a> _ anchor ( mỏ neo/ neo 1 liên kết)
+    + thuộc tính "href": để gắn link liên kết 
+
+5: - thẻ <ul> _ unordered líst ( danh sách không thứ tự)
+  -thẻ <ol> danh sách có thứ tự ( 1,2,3,4...)
+    + thẻ <li>_(list/list item): danh sách: 
+     nằm bên trong thẻ <ul> hoặc thẻ <ol> để ghi các phần tử của danh sách 
+     
+6: THẺ <TABLE>_BẢNG: để tạo ra 1 bảng 
+
+    - thẻ <thead>_phần đầu của bảng:
+        tạo ra các tiêu đề ( phần đầu của bảng)
+        + <th>-table heading (tiêu đề của bảng ): 
+        nằm bên trong thẻ <thead> , để tạo các mục đầu tiên của bảng 
+
+    - thẻ <tbody>: phần thân bảng
+        + <tr>_table round: dòng trong bảng 
+            + thẻ <td>: nằm trong thẻ <tr> 
+                Có bao nhiêu thẻ <th> thì tương ứng bao nhiêu thẻ <td> 
+
+7: thẻ <input>: 
+        - thuộc tính "type" 
+                +kiểu (style) tex: tạo ra 1 ô để nhập dữ liệu 
+                + checkbox: để tạo ra các ô để chọn ( có thể cick nhiều cái )
+                + radio: tạo ra hình tròn 
+                KHÁC loại checkbok.  Chỉ chọn được 1 ô tròn khi cùng 1 kiểu thuộc tính "name"
+    VÍ DỤ: 
+        <input name="1" type="radio">
+        <input name="1" type="radio">
+        <input name="1" type="radio">
+    => Do cùng có tên là 1 nên chỉ chọn được 1 ô 
+
+8: THẺ <BUTTON>_ cái nút
+    Để tạo ra 1 ô nào đó, ví dụ như ô đăng ký, hoặc đăng nhập. 
+    Có thẻ nhét link vào đây để dẫn gười dùng đến 1 trang, link khác
+VÍ DỤ: 
+ <button> 
+    <a href="1234.pjg"> Đi đến 1234 </a>
+ </button> 
+ ==> đoạn code này khi người dùng cick vào nút 1234 thì sẽ đi đến trang đó. 
+
+ 9. thẻ <div> : tạo 1 khối bao quanh các phần tử khác 
+
+
+10: thẻ <Select> tạo ra 1 danh sách chạy dọc 
+    + thẻ <option>_(lựa chọn) nằm trong thẻ này 
+        với thẻ option đầu tiên sẽ được hiện trước 
+============================================
+============================================
+================================
+CSS :
+CÁC cách sử dụng CSS: có 3 cách
+- CÁCH 1: Internal (nội bộ/bên trong ): 
+Viết luôn vào file HTML. Miễn hợp lệ.
+VÍ DỤ:
+ sử dụng thẻ <STYLE>: 
+    h1 {
+        color: red; 
+        font-size: 30px
+    }
+=> Biến nội dung trong thẻ H1 thành màu đỏ và có kích thước font chữ là 30px
+
+
+- CÁCH 2: External (Bên ngoài): tạo File CSS bên ngoài
+gắn thuộc tính CSS vào thuộc tính "href " vào thẻ link 
+trong thẻ <head> 
+
+
+- CÁCH 3: Inline (Viết trong 1 dòng của 1 thẻ mỏ)
+Đưa trực tiếp CSS vào 1 thẻ mở. 
+Sử dụng Attribute (thuộc tính) "Syle". 
+Để ghi các cặp thuộc tính, ngắn cách cặp thuộc tính giá trị khác thì 
+phải sử dụng dấu ";"  
+
+10. Attribute ( át-tri-biu): 
+LÀ THUỘC TÍNH CỦA CÁC THẺ TRONG HTML. THUỘC TÍNH ĐƯỢC ĐỊNH DẠNG TRONG THẺ MỞ 
+
+ -italic làm nghiêng kiểu chữ
+ -underline: gạch chân dòng chữ 
+-line-through: gạch giá tiền 
+-collapse:
+ làm cho tất cả đường viền của bảng gộp lại thành 1 đường viên duy nhất
+
+ ----------- 
+CSS CELECTOR: Bộ chọn CSS, để gọi tới các ELEMENT (phần tử)
+trong HTML, để có thể CSS 
+- attribute ID_định danh duy nhất:
+Chỉ thẻ theo được cái ID này khi CSS 
+    Trong lập trình khi CSS cho 1 số thẻ , ví dụ thẻ <h1> thì tất cả các thẻ 
+        <h1> đều bị ảnh hưởng giống nhau.
+    Do đó, ta cần đặt cho các thẻ 1 thuộc tính ID
+    Khi selector tới đó, ta sử dụng dấu #. Thì chỉ ID nào 
+    có tên sau dấu # mới bị ảnh hưởng 
+- attribute CLASS: 
+    Sử dụng 1 lớp cho nhiều phần tử khác nhau 
+    Để định dạng cho chúng giống hệt nhau
+    Sử dụng dấu "." để định danh trong CSS 
+    
+CLASS1.CLASS2 : Chọn ra các thẻ đồng thời có tất cả các class đó 
+
+.CLASS1 .CLASS2: CLASS2 là con của CLASS1 
+-----------------
+Priority in CSS (ĐỘ ƯU TIÊN TRONG CSS) :
+==> 1. Internal và External
+Cái nào được gọi sau thì coi là mới hơn thì được ưu tiên 
+2. Inline- 1000
+3. #Id- 100
+4. .class-10
+5. tag-1
+6. Equal specificity? 
+( tính đặc hiệu bằng nhau)
+=> cái nào được gọi nhiều "*", "." , "#" ...hơn thì win
+trong đó thẻ "*" là gọi toàn bộ những element (yếu tố) (thẻ)
+đều có 1 kiểu giống nhau 
+
+
+7. Universal selector and inherited?  
+( bộ chọn phổ quát và  kế thừa/thừa hưởng )
+Điểm 0, bị cái khác chặn là sẽ ưu tiên hơn 
+VD: 
+html {
+    color: violet; 
+
+}
+=> tất cả thẻ trong thẻ <html> sẽ thừa hưởng từ thẻ cha là <html> 
+
+8. ATTRIBUTE !important 
+=> Đây là thuộc tính mạnh nhất, phủ quyết mọi thuộc tính còn lại 
+---------------------------------
+Sử dụng biến trong CSS: 
+có 2 dạng là sử dụng theo toàn bộ hoặc cục bộ 
+- CÁCH 1 : TOÀN BỘ gọi theo tên biến 
+:root 
+{
+--text-color: red;
+}
+h2{
+    color: var(--text-color);
+}
+=> đoạn code này biến thẻ h2 thành màu đỏ 
+CỤC BỘ ( chỉ có tác dụng trong thẻ )
+h1{
+    --my-color: green;
+    color: var(--my-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+</body>
+</html>
